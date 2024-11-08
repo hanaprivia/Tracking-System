@@ -12,7 +12,7 @@
 .task_input {
     font-size: 20px;
     font-weight: 500;
-    background-color: #f9f9f9;
+    background: #f9f9f9;
     color: #000;
     border: 1px solid #dfe3e6;
     border-radius: 5px;
@@ -21,15 +21,17 @@
     width: 100%;
 }
 
+.task_input::placeholder {
+    color: #686868;
+}
+
 .task_form_bottom_line {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-
-
-.task_status{
+.task_status {
     font-size: 16px;
     font-weight: 500;
     border: 1px solid #999;
@@ -42,7 +44,7 @@
 .task_submit {
     font-size: 16px;
     font-weight: 500;
-    background-color: #6457f0;
+    background-color: #6457f9;
     color: #fff;
     border-radius: 5px;
     height: 40px;

@@ -1,11 +1,17 @@
-import React from 'react'
-import Todo from "./assets/direct-hit.png"
-const TaskColumn = () => {
-  return (
-    <section className='task_column'>
-        <h2 className='task_column_heading'><img src={Todo} alt=""/>To Do</h2>
-    </section>
-  )
-}
+import React from "react";
 
-export default TaskColumn
+import "./TaskColumn.css";
+import TaskCard from "./TaskCard.css";
+
+const TaskColumn = ({ title, icon }) => {
+  return (
+    <section className="task_column">
+      <h2 className="task_column_heading">
+        <img className="task_column_icon" src={icon} alt="" /> {title}
+      </h2>
+      <TaskCard title="This is Sample Text" tags={["HTML", "CSS"]} />
+    </section>
+  );
+};
+
+export default TaskColumn;
